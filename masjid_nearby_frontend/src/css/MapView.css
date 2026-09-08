@@ -1,0 +1,45 @@
+.custom-masjid-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.masjid-pin {
+  width: 46px;
+  height: 56px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+}
+
+.masjid-pin::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  background: #0f766e;
+  transform: translateX(-50%) rotate(45deg);
+  border-radius: 3px;
+  z-index: -1;
+}
+
+.masjid-pin-inner {
+  width: 42px;
+  height: 42px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  background: linear-gradient(135deg, #14b8a6, #0f766e);
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.masjid-pin-inner span {
+  font-size: 21px;
+  transform: rotate(45deg);
+}
+
